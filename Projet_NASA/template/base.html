@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="/static/img/favicon-nasa.png">
+  <!-- CSS FILE -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <!-- CSS FONTS -->
+  <style>
+    @font-face {
+      font-family: 'lemon-milk';
+      src: local('lemon-milk'),
+           url('{% static 'fonts/lemon-milk.otf' %}')}
+  </style>
+  <!-- TEMPLATE EXTENSION HEAD -->
+  {% block extend_head %}  {% endblock %}
+</head>
+
+<body>
+  <nav>
+      <ul class="navMenu">
+        <a href="/">HOME</a>
+        <a href="/asteroids">ASTEROIDS</a>
+        <a href="/earth">EARTH</a>
+        <a href="/mars">MARS</a>
+        <div class="dot"></div>
+      </ul>  
+  </nav>
+
+  <!-- TEMPLATE EXTENSION HEAD -->
+  {% block content %}  {% endblock %}
+
+  <!-- ANIMATION FOND -->
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+</body>
+
+</html>

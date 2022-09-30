@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- TEMPLATE EXTENSION HEAD -->
+{% block extend_head %} 
+<title>HOME</title> 
+<script src="{% static 'js/picoftheday.js' %}" type="text/javascript"></script> 
+<!-- Ce qui était prévu dans l'idée initiale était d'avoir directement sur la page d'accueil un apperç de la picture of the day de la nasa (+explication + titre). Finalement, n'arrivant pas à faire fonctionner le script pour le jour-même, sur django j'ai décidé de créer une page d'accueil plus classique. Le script de base semble fonctionner à lui seul dans un html classique mais je n'arrive pas à le faire fonctionner ici, la console m'indique une erreur par rappport au .addEventListener ... --> 
+{% endblock %}
+
+
+<!-- TEMPLATE EXTENSION HEAD -->
+{% block content %}  
+
+<header>
+<div id="index">
+  <img src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg" class ="img-nasa" alt="logo-nasa" style="float:left">
+    <h1>NASA Launches API Portal to Encourage Use of Data Sets</h1>
+    <p>NASA has launched an <a href="https://api.nasa.gov/index.html">API portal</a> as part of its ongoing attempts to encourage reuse of the significant data sets available from the U.S. space agency’s missions and other ongoing projects. The API Portal complements other initiatives, including the recently launched <a href="https://data.nasa.gov">NASA Data Portal</a>, <a href="https://code.nasa.gov/#/">open source code libraries</a> and <a href="https://github.com/nasa">GitHub account</a>.</p>
+ </div>
+</header>
+
+  <div id="content-index">
+        <h2> Equinox Sunrise Around the World</h2>
+        <img src="/static/img/equinox.png" alt="Different picture of the sunrise all around the world">
+        <p>A planet-wide collaboration resulted in this remarkable array of sunrise photographs taken around the September 2022 equinox. The images were contributed by 24 photographers, one in each of 24 nautical time zones around the world. Unlike more complicated civil time zone boundaries, the 24 nautical time zones are simply 15 degree longitude bands corresponding to 1 hour steps that span the globe. Start at the upper right for the first to experience a sunrise in the nautical time zone corresponding to Coordinated Universal Time (UTC) + 12 hours. In that time zone, the photographer was located in Christchurch, New Zealand. Travel to the west by looking down the column and then moving to the column toward the left for later sunrises as the time zone offset in hours from UTC decreases. Or, you can watch a video of September 2022 equinox sunrises around planet Earth.</p>
+        
+  </div>
+
+<!-- SI JS AVAIT MARCHE :
+  <div id="search_block" class="search_block">
+    <h1>    </h1>
+    <form>
+      <input type="date" name="from" id="from" required>
+      <input type="date" name="from" id="to">
+      <button id="search">
+        Rechercher
+      </button>
+    </form>
+    <br>
+    <p>Veillez à ce que le nombre de jours pris en compte n'excède pas sept jours.</p>
+  </div>
+  <div id="contenu">
+    <div id="reponse">
+      <div id="title"></div>
+      <div id="content"> </div>
+      <div id="img"></div>
+    </div>
+  </div>
+-->
+
+{% endblock %}

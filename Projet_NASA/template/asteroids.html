@@ -1,0 +1,681 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- TEMPLATE EXTENSION HEAD -->
+{% block extend_head %} 
+<title>ASTEROIDS</title> 
+<!-- CSS FILE -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/asteroids-style.css' %}">
+<script src="{% static '' %}" type="text/javascript"></script> 
+{% endblock %}
+<!-- TEMPLATE EXTENSION HEAD -->
+{% block content %}  
+
+<div id="search_block" class="search_block">
+    <h1>
+      Enter a start and end date
+    </h1>
+<p>To find out which astreroids did approached the Earth during this interval</p>
+    <form>
+      <input type="date" name="from" id="from" required placeholder="DD-MM-YYYY">
+      <input type="date" name="from" id="to" placeholder="DD-MM-YYYY">
+
+      <button id="search">
+        Rechercher
+      </button>
+    </form>
+
+    <p class="small">Make sure to not exceed seven days.</p>
+</div>
+
+
+
+  <div id="contenu">
+<div id="wrap"> 
+
+  <div class="card-wrapper flip-right">
+    <div class="card">
+      <div class="front">
+        <div id="reponse">
+          <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+          <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+          <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+          <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+        </div>
+      </div>
+      <div class="back">
+        <h3>The last five time we've seen this asteroid approached</h3>
+        <table>
+          <tr>
+            <th></th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>2020-09-27</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>2010-09-27</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>2000-09-27</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>1990-09-27</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>1980-09-27</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</div>
+
+
+  <div class="card-wrapper flip-right">
+    <div class="card">
+      <div class="front">
+        <div id="reponse">
+          <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+          <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+          <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+          <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+        </div>
+      </div>
+      <div class="back">
+        <h3>The last five time we've seen this asteroid approached</h3>
+        <table>
+          <tr>
+            <th></th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>2020-09-27</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>2010-09-27</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>2000-09-27</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>1990-09-27</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>1980-09-27</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</div>
+
+
+  <div class="card-wrapper flip-right">
+    <div class="card">
+      <div class="front">
+        <div id="reponse">
+          <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+          <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+          <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+          <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+        </div>
+      </div>
+      <div class="back">
+        <h3>The last five time we've seen this asteroid approached</h3>
+        <table>
+          <tr>
+            <th></th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>2020-09-27</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>2010-09-27</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>2000-09-27</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>1990-09-27</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>1980-09-27</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</div>
+
+
+
+  <div class="card-wrapper flip-right">
+    <div class="card">
+      <div class="front">
+        <div id="reponse">
+          <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+          <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+          <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+          <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+        </div>
+      </div>
+      <div class="back">
+        <h3>The last five time we've seen this asteroid approached</h3>
+        <table>
+          <tr>
+            <th></th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>2020-09-27</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>2010-09-27</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>2000-09-27</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>1990-09-27</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>1980-09-27</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</div>
+
+    <div class="card-wrapper flip-right">
+      <div class="card">
+        <div class="front">
+          <div id="reponse">
+            <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+            <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+            <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+            <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+          </div>
+        </div>
+        <div class="back">
+          <h3>The last five time we've seen this asteroid approached</h3>
+          <table>
+            <tr>
+              <th></th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <td>1.</td>
+              <td>2020-09-27</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>2010-09-27</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>2000-09-27</td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>1990-09-27</td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>1980-09-27</td>
+            </tr>
+          </table>
+        </div>
+    </div>
+  </div>
+  
+  <div class="card-wrapper flip-right">
+    <div class="card">
+      <div class="front">
+        <div id="reponse">
+          <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+          <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+          <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+          <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+        </div>
+      </div>
+      <div class="back">
+        <h3>The last five time we've seen this asteroid approached</h3>
+        <table>
+          <tr>
+            <th></th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>2020-09-27</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>2010-09-27</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>2000-09-27</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>1990-09-27</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>1980-09-27</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</div>
+
+
+  <div class="card-wrapper flip-right">
+    <div class="card">
+      <div class="front">
+        <div id="reponse">
+          <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+          <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+          <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+          <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+        </div>
+      </div>
+      <div class="back">
+        <h3>The last five time we've seen this asteroid approached</h3>
+        <table>
+          <tr>
+            <th></th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>2020-09-27</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>2010-09-27</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>2000-09-27</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>1990-09-27</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>1980-09-27</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</div>
+
+
+  <div class="card-wrapper flip-right">
+    <div class="card">
+      <div class="front">
+        <div id="reponse">
+          <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+          <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+          <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+          <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+        </div>
+      </div>
+      <div class="back">
+        <h3>The last five time we've seen this asteroid approached</h3>
+        <table>
+          <tr>
+            <th></th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>2020-09-27</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>2010-09-27</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>2000-09-27</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>1990-09-27</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>1980-09-27</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</div>
+
+
+
+  <div class="card-wrapper flip-right">
+    <div class="card">
+      <div class="front">
+        <div id="reponse">
+          <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+          <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+          <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+          <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+        </div>
+      </div>
+      <div class="back">
+        <h3>The last five time we've seen this asteroid approached</h3>
+        <table>
+          <tr>
+            <th></th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>2020-09-27</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>2010-09-27</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>2000-09-27</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>1990-09-27</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>1980-09-27</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</div>
+
+    <div class="card-wrapper flip-right">
+      <div class="card">
+        <div class="front">
+          <div id="reponse">
+            <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+            <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+            <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+            <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+          </div>
+        </div>
+        <div class="back">
+          <h3>The last five time we've seen this asteroid approached</h3>
+          <table>
+            <tr>
+              <th></th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <td>1.</td>
+              <td>2020-09-27</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>2010-09-27</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>2000-09-27</td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>1990-09-27</td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>1980-09-27</td>
+            </tr>
+          </table>
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="card-wrapper flip-right">
+    <div class="card">
+      <div class="front">
+        <div id="reponse">
+          <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+          <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+          <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+          <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+        </div>
+      </div>
+      <div class="back">
+        <h3>The last five time we've seen this asteroid approached</h3>
+        <table>
+          <tr>
+            <th></th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>2020-09-27</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>2010-09-27</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>2000-09-27</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>1990-09-27</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>1980-09-27</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</div>
+
+
+  <div class="card-wrapper flip-right">
+    <div class="card">
+      <div class="front">
+        <div id="reponse">
+          <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+          <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+          <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+          <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+        </div>
+      </div>
+      <div class="back">
+        <h3>The last five time we've seen this asteroid approached</h3>
+        <table>
+          <tr>
+            <th></th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>2020-09-27</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>2010-09-27</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>2000-09-27</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>1990-09-27</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>1980-09-27</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</div>
+
+
+  <div class="card-wrapper flip-right">
+    <div class="card">
+      <div class="front">
+        <div id="reponse">
+          <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+          <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+          <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+          <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+        </div>
+      </div>
+      <div class="back">
+        <h3>The last five time we've seen this asteroid approached</h3>
+        <table>
+          <tr>
+            <th></th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>2020-09-27</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>2010-09-27</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>2000-09-27</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>1990-09-27</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>1980-09-27</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</div>
+
+
+
+  <div class="card-wrapper flip-right">
+    <div class="card">
+      <div class="front">
+        <div id="reponse">
+          <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+          <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+          <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+          <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+        </div>
+      </div>
+      <div class="back">
+        <h3>The last five time we've seen this asteroid approached</h3>
+        <table>
+          <tr>
+            <th></th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>2020-09-27</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>2010-09-27</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>2000-09-27</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>1990-09-27</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>1980-09-27</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</div>
+
+    <div class="card-wrapper flip-right">
+      <div class="card">
+        <div class="front">
+          <div id="reponse">
+            <h3>Asteroid :<span id="asteroid_name">187026 (2005 EK70)</span></h3>
+            <h4>Estimated diameter in meters : Between <span id="asteroid_size_min">848.31</span> meters and : <span id="asteroid_size_max">1896.88</span></h4>
+            <h5>Distance from Earth : <span id="asteroid_distance"></span> kilometers</h5>
+            <h6>Next Asteroid Approaches: <span id="asteroid_next"></span></h6>
+          </div>
+        </div>
+        <div class="back">
+          <h3>The last five time we've seen this asteroid approached</h3>
+          <table>
+            <tr>
+              <th></th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <td>1.</td>
+              <td>2020-09-27</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>2010-09-27</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>2000-09-27</td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>1990-09-27</td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>1980-09-27</td>
+            </tr>
+          </table>
+        </div>
+    </div>
+  </div>
+
+</div>
+</div>
+{% endblock %}

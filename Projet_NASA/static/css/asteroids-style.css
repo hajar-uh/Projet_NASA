@@ -1,0 +1,184 @@
+#search_block{
+    position: fixed;
+    margin-top: 10vh;
+    margin-left: 12.5vw;
+    width: 75vw;
+    height: 20vh;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%), 0 10px 15px rgb(0 0 0 / 20%);
+    box-sizing: border-box;
+    background-image: linear-gradient(45deg, rgba(66,60,90,0.6), rgba(66,60,90,0.6));
+    mix-blend-mode: hard-light;
+    border-bottom: 2px outset #000000;
+    border-right: 2px outset #000000;
+    border-top: 1px outset rgba(171,180,196,0.4);
+    border-left: 1px outset rgba(171,180,196,0.4);
+}
+#search_block h1{
+    text-align: center;
+    color: #A8BBDC;
+    font-size: 2rem;
+}
+#search_block p{
+    color: #EEFCF3;
+    margin-right: 2vw;
+     text-align: center;
+     margin-top: 0.5vh;
+     
+}
+.small{
+    font-size: 0.8rem;
+}
+
+#search_block form{
+    text-align: center;
+    margin-top: -0.5vh;
+
+}
+input{
+    padding: 4px;
+     font-size: 1rem;
+     border-width: 1px;
+     border-color: rgba(171,180,196,0.4);
+     color: #040404;
+     border-style: hidden;
+     border-radius: 5px;
+     box-shadow: 0px 0px 5px rgba(171,180,196,0.4);;
+     text-shadow: 1px 1px 4px rgba(171,180,196,0.4);;
+}
+
+button{
+        font-weight: 0;
+        font-size: 1rem;
+        color: #fff;
+        background: linear-gradient(164deg, #9cb3c9ad 0%, #000000 100%);
+        padding: 10px 19px;
+        border: none;
+        box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+        border-radius: 17px;
+        transform: translateY(0);
+        cursor:pointer;
+        }
+
+/* ################################################
+                        CONTENT
+###################################################
+*/
+
+
+#contenu {
+    position:fixed;
+    margin-top: 37vh;
+    margin-left: 12.5vw;
+    width: 75vw;
+    height: 50vh;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%), 0 10px 15px rgb(0 0 0 / 20%);
+    box-sizing: border-box;
+    background-image: linear-gradient(45deg, rgba(66,60,90,0.6), rgba(66,60,90,0.6));
+    mix-blend-mode: hard-light;
+    border-bottom: 2px outset #000000;
+    border-right: 2px outset #000000;
+    border-top: 1px outset rgba(171,180,196,0.4);
+    border-left: 1px outset rgba(171,180,196,0.4);
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+
+/*
+############################################
+                  CARDS
+############################################
+*/
+
+/*NE réussissant pas à automatiser l'extraction de données, j'ai quand même voulu montrer ce que ça aurait du donné.*/
+
+#wrap{
+    margin-top: 3vh;
+    margin-left: 3vw;
+}
+
+.card {
+  width: 10vw;
+  height: 25vh;
+  margin: 10px;
+}
+
+.card .front {
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,212,255,0.5872724089635855) 45%, rgba(9,9,121,1) 93%);
+  border-bottom: 3px outset #c9d9e4;
+  border-radius: 0px 0px 20px 0px;
+  border-right: 3px outset #c9d9e4;
+  border-radius: 0px 0px 20px 0px;
+}
+.card .front h3, .card .front h4,
+.card .front h5, .card .front h6{
+    font-size: 0.75rem;
+    color: #c9d9e4;
+    margin: 1vw 1vh 1vw 1vh;
+    text-align: center;
+}
+.card .back {
+  background: rgba(2, 0, 36, 0.671);
+  background: rgb(0,212,255);
+  background: radial-gradient(circle, rgba(0,212,255,0.5872724089635855) 0%, rgba(2,0,36,1) 45%, rgba(9,9,121,1) 93%);
+  border-top: 3px outset #000000;
+  border-radius: 20px 0px 20px 0px;
+  border-left: 3px outset #000000;
+  border-radius: 20px 0px 20px 0px;
+}
+.card .back h3{
+    display: block;
+    font-size: 0.75rem;
+    color: #A8BBDC;
+    margin: 1vw 1vh 1vw 1vh;
+    text-align: center;
+    
+}
+.card .back table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.card .back table tr{
+    font-size: 0.75rem;
+    color: #A8BBDC;
+    margin: 1vw 1vh 1vw 1vh;
+}
+/*animation*/
+.card-wrapper {
+  display: inline-block;
+  perspective: 2000px;
+}
+.card-wrapper .card {
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+  transform-style: preserve-3d;
+}
+.card-wrapper .card .front,
+.card-wrapper .card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+}
+.card-wrapper .card .front {
+  z-index: 2;
+}
+.card-wrapper .card .back,
+.card-wrapper.flip-right .card .back {
+  transform: rotateY(180deg);
+}
+.card-wrapper:hover .card,
+.card-wrapper.flip-right:hover .card {
+  transform: rotateY(180deg);
+}
